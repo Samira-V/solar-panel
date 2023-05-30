@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #f97c37;
+    --secondary-color: #999999;
+    --dark-color: #111111;
+    --bg-color: #e5e5e5;
+}
+
+/*header*/
+header .navbar {
+    box-shadow: rgba(0, 0, 0, 0.1);
+    padding: 0 30px;
+}
+
+header .flex {
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--secondary-color);
+}
+
+header .hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*Features*/
+.features p {
+    margin-bottom: 3rem;
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.features .card {
+    position: relative;
+    text-align: center;
+
+}
+
+.features img {
+    border: 2px solid #fff;
+    width: 100%;
+}
+
+.features .card .card-disc {
+    padding-top: 40px;
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.features .card div {
+    background-color: #fff;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    background-image: none;
+    position: absolute;
+    top: -30px;
+    left: 25%;
+    z-index: 99;
+}
+
+/*solar solution */
+
+.solar-solution {
+    background-color: var(--bg-color);
+    margin-top: 60px;
+    position: relative;
+}
+
+.solar-solution .row {
+    margin: 0 15px;
+    flex-wrap: wrap;
+}
+
+.solar-solution .border {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    border: 10px solid var(--primary-color);
+
+}
+
+.solar-solution .row .solution-text {
+    flex-basis: 40%;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 99;
+    margin: 0 40px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.solar-solution .row .solution-text p {
+    color: var(--secondary-color);
+}
+
+.solar-solution .row .solution-text i {
+    margin-right: 5px;
+}
+
+.solar-solution .row .solution-img {
+    z-index: 99;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-basis: 40%;
+    text-align: center;
+    background-position: center;
+    background-image: url(/img/jhjh.jpg);
+    background-size: cover;
+}
+
+.solar-solution .border .solution-img img {
+    width: 100%;
+}
+
+/* solar-plan*/
+
+.solar-plan {
+    position: relative;
+    background-color: var(--bg-color);
+    margin-top: 0;
+    overflow: visible;
+}
+
+.solar-plan .grid {
+    gap: 0;
+}
+
+.solar-plan .solar-plan-dark,
+.text,
+.img {
+    height: 300px;
+    z-index: 99;
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+.solar-plan .solar-plan-dark h2 {
+    margin-bottom: 10px;
+}
+
+.solar-plan .text {
+    text-align: center;
+}
+
+.solar-plan .text p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.solar-plan .text a {
+    color: #111111;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid burlywood;
+}
+
+
+.solar-plan .bg-primary {
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* solar disc*/
+#solar-disc {
+    width: 100%;
+    background: url(/img/uyuy.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+#solar-disc .container .box {
+    background-color: #fff;
+    float: right;
+    width: 60%;
+    padding: 20px 50px;
+    line-height: 1.2;
+    border-left: 10px solid var(--primary-color);
+}
+
+#solar-disc .box p {
+    position: relative;
+    color: var(--secondary-color);
+}
+
+#solar-disc .box p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+/* energy */
+
+.energy-title {
+    font-size: 2rem;
+    border-right: 10px solid var(--primary-color);
+}
+
+
+
+.energy-text p {
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+.energy-img img {
+    width: 350px;
+
+}
+
+/*services */
+#services {
+    background-color: var(--bg-color);
+    position: relative;
+
+}
+
+#services h1 {
+    letter-spacing: 1.5px;
+}
+
+#services .container .row {
+    gap: 50px;
+}
+
+#services .h3 {
+    font-weight: bold;
+}
+
+#services p {
+    font-size: 14px;
+    color: #333;
+}
+
+#services a {
+    color: var(--dark-color);
+    font-weight: bold;
+    letter-spacing: 1;
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/*clean energy */
+
+#clean-energy {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 250px;
+}
+
+#clean-energy .container .row {
+    position: relative;
+    grid-gap: 0;
+}
+
+#clean-energy .container .row .box {
+    grid-column: 0 / span 1;
+}
+
+#clean-energy .container .row .img {
+    background: url(/img/vbb.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / span 3;
+}
+
+
+#clean-energy .row .box {
+
+    border-top: 30px solid var(--primary-color);
+    z-index: 99;
+}
+
+#clean-energy .row .clean-energy-img .box p {
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 2;
+
+}
+
+#clean-energy .row .box .btn-outline {
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+/*features*/
+.blog {
+    margin-top: 300px;
+}
+
+.blog .row {
+    flex-wrap: wrap;
+}
+
+.blog .box {
+    background-color: var(--bg-color);
+    padding: 0px 12px;
+    margin: 0 20px;
+    text-align: center;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.blog .box .icon i {
+    font-size: 2rem;
+}
+
+.blog .box .counter p {
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* contact*/
+
+#contact {
+    background-color: var(--primary-color);
+}
+
+#contact h1 {
+    color: #fff;
+}
+
+#contact .input {
+    margin: 5px 0;
+}
+
+#contact .input input,
+#contact textarea {
+    border: none;
+    padding: 5px 10px;
+    width: 400px;
+    outline: none;
+}
+
+#contact .input input::placeholder,
+#contact textarea::placeholder {
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+#contact .input[type='submit'] {
+    background-color: transparent;
+    text-align: left;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: var(--bg-color);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 10px;
+    background-color: var(--bg-color);
+    display: none;
+    overflow: hidden;
+    color: var(--secondary-color);
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 12px;
+    color: #000;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+/*copyright*/
+.copyright {
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 60px;
+    color: #6f6f6f;
+    font-size: 14px;
+    text-align: center;
+}
+
+.copyright p {
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+/*media query*/
+
+@media(max-width:990px) {
+    #solar-disc .container .box {
+        width: 100%;
+    }
+
+    #clean-energy .container .row .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .grid {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+/* Tablet and under*/
+@media(max-width:768px) {
+
+
+    .solar-solution .row .solution-text {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        height: 400px;
+    }
+
+    .solar-solution .row .solution-text h2 {
+        margin: 0;
+    }
+
+    .solar-solution .row .solution-text p {
+        margin: 0;
+    }
+
+    .solar-solution .row .solution-img {
+        flex-basis: 100%;
+        height: 400px;
+
+    }
+
+    .solar-solution .border {
+        top: 100px;
+        height: 750px;
+    }
+
+    #solar-disc .container .box {
+        width: 100%;
+    }
+
+    .blog .box {
+        flex-basis: 50%;
+        margin-top: 20px;
+    }
+
+
+}
+
+/*mobile*/
+@media(max-width:600px) {
+    .solar-solution .row .solution-text {
+        flex-basis: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .solar-solution .border {
+        top: 80px;
+        height: 700px;
+    }
+
+    .solar-plan .bg-primary {
+        height: 500px;
+    }
+
+    #solar-disc {
+        padding: 0;
+    }
+
+    #solar-disc .container .box {
+        padding: 40px;
+        margin: 50px 0;
+        line-height: 1;
+        font-size: 16px;
+    }
+
+    .blog .box {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+}
